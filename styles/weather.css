@@ -1,0 +1,54 @@
+.results-wraper {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "cw" "f" "m";
+}
+
+@media (min-width: 800px) {
+    .results-wraper {
+        grid-template-columns: 4fr 6fr;
+        grid-template-areas: "cw f" "m m";
+    }
+}
+
+.curr-weather-sect {
+    grid-area: cw;
+    padding: 8%;
+    position: relative;
+}
+
+.forecast-sect {
+    grid-area: f;
+    padding: 5%;
+}
+
+.my-map {
+    grid-area: m;
+}
+
+.curr-weather-details, .forecast-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 10px;
+    text-align: start;
+    padding: 3%;
+}
+
+.fav-indicator {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.fav-indicator-img {
+    width: 30px;
+    background-color: rgb(253, 110, 134);
+    border: rgb(255, 35, 71) 3px solid;
+    border-radius: 99999px;
+    padding: 1.5%;
+    margin-right: 7px;
+}

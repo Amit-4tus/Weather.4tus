@@ -1,0 +1,96 @@
+@import 'styles/helpers.css';
+@import 'styles/favs.css';
+@import 'styles/search.css';
+@import 'styles/weather.css';
+@import 'styles/map.css';
+* {
+    box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-image: url(./images/bgi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.dark {
+    background-color: black;
+    background-image: url(./images/bgi-dark-mode.png);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #57cbff;
+    padding: 20px 10%;
+}
+
+header.dark {
+    background-color: #ff2200;
+}
+
+footer {
+    text-align: center;
+    padding: 8%;
+}
+
+.footer-header {
+    margin-top: 0;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(83, 83, 83);
+    border-radius: 999999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(54, 54, 54);
+}
+
+.main-btn {
+    width: 7vh;
+    height: 7vh;
+    border-radius: 999px;
+    position: fixed;
+    right: 3vh;
+    padding: 0;
+    outline: none;
+}
+
+.lighting-btn {
+    bottom: 3vh;
+    background-color: blue;
+    border: darkblue 3px solid;
+}
+
+.fav-btn {
+    bottom: 14vh;
+    background-color: rgb(253, 110, 134);
+    border: rgb(255, 35, 71) 3px solid;
+}
+
+.lighting-btn-img {
+    width: 2.5vh;
+    position: relative;
+    top: 2px;
+}
+
+.fav-btn-img {
+    width: 4vh;
+    position: relative;
+    top: 2px;
+    /* right: 1px; */
+}

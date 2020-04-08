@@ -1,0 +1,35 @@
+.fav-city {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.favorites-table-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.remove-from-favs-btn {
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(253, 110, 134);
+    border: rgb(255, 35, 71) 3px solid;
+    border-radius: 99999px;
+}
+
+.dis-fav-img {
+    width: 20px;
+    position: relative;
+}
+
+.fav-city-name {
+    height: 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: unset;
+    padding: 0px;
+}

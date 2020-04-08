@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather.4tus</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body onload="init()">
+    <header>
+        <span onclick="navigate('main')" class="logo btn" title="go to main page">Weather.4tus</span>
+        <span class="btn" onclick="navigate('favorites')" title="go to favorites page">Favorites</span>
+    </header>
+
+    <main class="main-page container">
+        <!-- main page is rendered here -->
+    </main>
+
+    <main class="favs-page container hide">
+        <!-- favorites page is rendered here -->
+    </main>
+
+    <button class="fav-btn main-btn btn" title="add to favorites" onclick="addToFavs()"><img class="fav-btn-img"
+            src="images/favorite-icon.png"></button>
+    <button class="lighting-btn main-btn btn" title="change lighting" onclick="toggleLighting()"><img
+            class="lighting-btn-img" src="images/lighting-icon.png"></button>
+
+    <div class="something-wrong-error container">
+        <!-- an error is rendered here -->
+    </div>
+
+    <footer class="bg-muted">
+        <h2 class="footer-header">Built by Amit Fortus</h2>
+        <a class="myEmail" href="mailto:amit.fortus4@gmail.com">amit.fortus4@gmail.com</a>
+        <span>+972-8024121</span>
+    </footer>
+
+    <script src="logic/autoComplete.js"></script>
+    <script src="logic/weather.js"></script>
+    <script src="logic/map.js"></script>
+    <script src="logic/favs.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

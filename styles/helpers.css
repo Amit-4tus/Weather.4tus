@@ -1,0 +1,50 @@
+.hide {
+    display: none !important;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.icon {
+    width: 15px;
+    position: relative;
+    top: 1px;
+}
+
+.bg-muted {
+    background-color: rgba(211, 211, 211, 0.644);
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 270px;
+    margin: auto;
+    text-align: center;
+}
+
+@media (min-width: 550px) {
+    .container {
+        width: 450px;
+    }
+}
+
+@media (min-width: 800px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 900px;
+    }
+}
