@@ -8,7 +8,7 @@ function getAutoComplete(searchFor) {
 
   request.open(
     "GET",
-    `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${APIKey}&q=${searchFor}`,
+    `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${APIKey}&q=${searchFor}`,
     true
   );
 

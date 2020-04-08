@@ -13,7 +13,7 @@ function getCurrWeather(city) {
 
   request.open(
     "GET",
-    `http://dataservice.accuweather.com/currentconditions/v1/${city.key}?apikey=${APIKey}`,
+    `https://dataservice.accuweather.com/currentconditions/v1/${city.key}?apikey=${APIKey}`,
     true
   );
 
@@ -29,7 +29,7 @@ function getForecast(city) {
 
   request.open(
     "GET",
-    `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${city.key}?apikey=${APIKey}&metric=${isMetric}`,
+    `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${city.key}?apikey=${APIKey}&metric=${isMetric}`,
     true
   );
 
